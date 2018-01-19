@@ -1,0 +1,31 @@
+
+/* Buttons */
+
+.btn {
+
+	margin: 15px 0;
+	width: auto !important;
+
+}
+
+.btn-align {
+
+	text-align: center;
+
+}
+
+.btn-primary {
+
+  background: $yellow;
+  border-color: $yellow;
+  color: $black !important;
+
+  &:hover, &:focus {
+
+  	background: darken($yellow, 40%);
+  	border-color: darken($yellow, 40%);
+  	color: $white !important;
+
+  }
+
+}

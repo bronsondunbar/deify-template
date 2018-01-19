@@ -1,0 +1,25 @@
+
+/* Cards */
+
+.card {
+
+	text-align: center;
+	border: none;
+	border-radius: 0;
+
+}
+
+.card.highlight {
+
+	background: $black;
+	padding: 30px 0;
+	margin: 0 -30px;
+	color: $white;
+
+	h1, h2, h3, h4, h5, p {
+
+		color: $white !important;
+
+	}
+
+}
