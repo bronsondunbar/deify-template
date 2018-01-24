@@ -10656,6 +10656,82 @@ section {
 section[role="default"] .grid {
   min-height: 100vh; }
 
+section[role="group"] {
+  padding: 0; }
+  section[role="group"] .grid {
+    margin: 0; }
+    section[role="group"] .grid .item {
+      position: relative;
+      margin: 0;
+      padding: 60px 30px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      section[role="group"] .grid .item:nth-of-type(1) {
+        background: #ffd100; }
+      section[role="group"] .grid .item:nth-of-type(2) {
+        background: #e22d5d; }
+      section[role="group"] .grid .item:nth-of-type(3) {
+        background: #f56e57; }
+      section[role="group"] .grid .item:hover, section[role="group"] .grid .item:focus {
+        background: #ffffff; }
+    section[role="group"] .grid .item.active {
+      background: #ffffff; }
+      section[role="group"] .grid .item.active:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -30px;
+        width: 0;
+        height: 0;
+        border-bottom: solid 30px #333333;
+        border-left: solid 30px transparent;
+        border-right: solid 30px transparent; }
+    section[role="group"] .grid + #groupDetails .grid {
+      background: #333333;
+      color: #ffffff;
+      display: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      section[role="group"] .grid + #groupDetails .grid .item {
+        background: none;
+        color: #ffffff;
+        cursor: default; }
+        section[role="group"] .grid + #groupDetails .grid .item h1, section[role="group"] .grid + #groupDetails .grid .item h2, section[role="group"] .grid + #groupDetails .grid .item h3, section[role="group"] .grid + #groupDetails .grid .item h4 {
+          color: #ffffff !important; }
+        section[role="group"] .grid + #groupDetails .grid .item + .grid .item h1, section[role="group"] .grid + #groupDetails .grid .item + .grid .item h2, section[role="group"] .grid + #groupDetails .grid .item + .grid .item h3, section[role="group"] .grid + #groupDetails .grid .item + .grid .item h4 {
+          color: #ffffff !important; }
+        section[role="group"] .grid + #groupDetails .grid .item .grid {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item .card {
+            background: #ffffff; }
+            section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h1, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h2, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h3, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h4, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h5 {
+              color: #333333; }
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h1, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h2, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h3, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h4, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h5 {
+            color: #333333 !important; }
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight p {
+            color: #333333 !important; }
+        section[role="group"] .grid + #groupDetails .grid .item:hover, section[role="group"] .grid + #groupDetails .grid .item:focus {
+          background: none; }
+    section[role="group"] .grid + #groupDetails .grid.active {
+      display: block; }
+
+section[role="sponsors"] {
+  background: #2bbde0; }
+  section[role="sponsors"] h1, section[role="sponsors"] h2, section[role="sponsors"] h3, section[role="sponsors"] h4, section[role="sponsors"] p, section[role="sponsors"] i {
+    color: #ffffff !important; }
+  section[role="sponsors"] ul {
+    list-style-type: none;
+    text-align: center; }
+    section[role="sponsors"] ul li {
+      display: inline-block;
+      margin: 0 15px 0 0; }
+      section[role="sponsors"] ul li:last-child {
+        margin: 0; }
+
 section[role="page"] {
   height: 40vh;
   padding: 5%;
@@ -10788,7 +10864,7 @@ section[role="page"] {
       position: relative;
       top: 0;
       left: 0;
-      font-size: 4em; }
+      font-size: 8em; }
 
 .layout-flip {
   padding: 30px 100px 30px 100px;
@@ -10807,7 +10883,7 @@ section[role="page"] {
       position: relative;
       top: 0;
       left: 0;
-      font-size: 4em; }
+      font-size: 8em; }
 
 body {
   background: #ffffff;
