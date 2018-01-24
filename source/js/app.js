@@ -9,25 +9,5 @@
 
 
 // @codekit-prepend 'functions/templateNavbar.js'
-// @codekit-prepend 'functions/templateAccordion.js'
-// @codekit-prepend 'functions/templateCarousel.js'
-// @codekit-prepend 'functions/templateSearchBar.js'
-// @codekit-prepend 'functions/templateScrollReveal.js'
-// @codekit-prepend 'functions/templateFilter.js'
-
-
-
-$(document).ready(function(){
-	$(".navbar-toggler").click(function(){
-		$(this).toggleClass("open");
-		$(".nav-content").toggleClass("open");
-	});
-});
-
-
-
-
-
-
-
+// @codekit-prepend 'functions/templateTabs.js'
 
