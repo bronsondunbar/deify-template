@@ -6,8 +6,6 @@ Template can be setup using CodeKit
 
 https://codekitapp.com/
 
-Preview https://bronsondunbar.github.io/alpha-template/
-
 ## License
 
 MIT License
