@@ -376,9 +376,29 @@ section[role="group"] {
 
 						.item {
 
-							.card {
+							&:nth-of-type(1) {
+
+								padding: 30px 0 30px 30px;
+
+							}
+
+							&:nth-of-type(2) {
+
+								padding: 30px 0 30px 0;
+
+							}
+
+							&:nth-of-type(3) {
+
+								padding: 30px 30px 30px 0;
+
+							}
+
+							.group-details {
 
 								background: $white;
+								margin: 0 -1px;
+								padding: 30px;
 
 								h1, h2, h3, h4, h5 {
 
@@ -388,7 +408,9 @@ section[role="group"] {
 
 							}
 
-							.card.highlight {
+							.group-details.highlight {
+
+								background: $yellow;
 
 								h1, h2, h3, h4, h5 {
 
@@ -399,6 +421,13 @@ section[role="group"] {
 								p {
 
 									color: $black !important;
+
+								}
+
+								.btn-primary {
+
+									background: $black;
+									color: $white !important;
 
 								}
 
@@ -527,46 +556,82 @@ section[role="page"] {
 
 		}
 
-		.card {
+		.groups {
 
-			background: $lightGray;
+			.item {
 
-			.btn-primary {
+				padding: 30px 0;
+				margin: 0;
 
-				background: $blue;
-	  		border-color: $blue;
-	  		color: $white !important;
+				i {
 
-	  		&:hover, &:focus {
+					font-size: 4em;
 
-		  		background: darken($blue, 40%);
-		  		border-color: darken($blue, 40%);
-		  		color: $white !important;
-
-		  	}
+				}
 
 			}
 
 		}
 
-		.card.highlight {
+		.group-details {
 
-			background: $blue;
-			border: 1px solid $blue;
+			background: $lightGray;
+			margin: 0 -1px;
+			padding: 30px;
+			text-align: center;
+
+			h1, h2, h3, h4, h5 {
+
+				color: $black;
+
+			}
 
 			.btn-primary {
 
 				background: $black;
-	  		border-color: $black;
-	  		color: $white !important;
+				border: 1px solid $black;
+				color: $white !important;
 
-	  		&:hover, &:focus {
+				&:hover, &:focus {
 
-		  		background: darken($black, 40%);
-		  		border-color: darken($black, 40%);
-		  		color: $white !important;
+					background: $white;
+					border: 1px solid $white;
+					color: $black !important;
 
-		  	}
+				}
+
+			}
+
+		}
+
+		.group-details.highlight {
+
+			background: $blue;
+
+			h1, h2, h3, h4, h5 {
+
+				color: $white !important;
+
+			}
+
+			p {
+
+				color: $white !important;
+
+			}
+
+			.btn-primary {
+
+				background: $yellow;
+				border: 1px solid $yellow;
+				color: $black !important;
+
+				&:hover, &:focus {
+
+					background: $white;
+					border: 1px solid $white;
+
+				}
 
 			}
 
