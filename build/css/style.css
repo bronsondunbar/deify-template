@@ -10716,6 +10716,9 @@ section[role="group"] {
             border-bottom: solid 30px #333333;
             border-left: solid 30px transparent;
             border-right: solid 30px transparent; } }
+        @media (max-width: 425px) {
+          section[role="group"] .grid .item.active:after {
+            top: 54%; } }
     section[role="group"] .grid + #groupDetails .grid {
       background: #333333;
       color: #ffffff;
@@ -10949,7 +10952,8 @@ textarea {
   background: none;
   border: 1px solid #333333;
   padding: 5px;
-  width: 100%; }
+  width: 100%;
+  min-height: 30vh; }
   textarea:focus {
     border: 1px solid #2bbde0; }
 
