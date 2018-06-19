@@ -226,7 +226,7 @@ section[role="group"] {
 
 	padding: 0;
 	display: grid;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr;
 
 	.grid {
 
@@ -379,7 +379,11 @@ section[role="group"] {
 
 		}
 
-		
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+	   grid-template-columns: 1fr auto;
 
 	}
 
