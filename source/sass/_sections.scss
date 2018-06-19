@@ -283,6 +283,17 @@ section[role="group"] {
 				border-left: solid 30px transparent;
 				border-right: solid 30px transparent;
 
+				@media (max-width: $tabletLandscape) {
+
+				  top: 35%;
+				  right: 0;
+				  left: 100%;
+				  margin-left: -80px;
+				  border: 30px solid transparent;
+					border-right: 30px solid $black;
+
+				}
+
 			}
 
 		}

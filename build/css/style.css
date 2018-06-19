@@ -10690,6 +10690,14 @@ section[role="group"] {
         border-bottom: solid 30px #333333;
         border-left: solid 30px transparent;
         border-right: solid 30px transparent; }
+        @media (max-width: 1024px) {
+          section[role="group"] .grid .item.active:after {
+            top: 35%;
+            right: 0;
+            left: 100%;
+            margin-left: -80px;
+            border: 30px solid transparent;
+            border-right: 30px solid #333333; } }
     section[role="group"] .grid + #groupDetails .grid {
       background: #333333;
       color: #ffffff;
