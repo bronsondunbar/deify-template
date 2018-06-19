@@ -18,6 +18,12 @@ h1 {
 
 	font-size: 5em;
 
+	@media (max-width: $mobileLargePortrait) {
+
+		font-size: 3em;
+
+	}
+
 }
 
 body {

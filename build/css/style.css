@@ -10301,6 +10301,9 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 5em; }
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 3em; } }
 
 body {
   font-family: "Arial", sans-serif;
@@ -10453,6 +10456,9 @@ body {
       display: block;
       text-align: center;
       padding: 15px; }
+  @media (max-width: 425px) {
+    .nav-content {
+      top: -280px; } }
 
 .nav-content.open {
   top: 54px; }
@@ -10576,8 +10582,13 @@ section {
         color: #333333; }
     section:nth-of-type(1) h1 {
       word-spacing: 100vw;
-      text-align: left !important;
+      text-align: left;
       padding: 0 0 0 60px; }
+      @media (max-width: 1024px) {
+        section:nth-of-type(1) h1 {
+          word-spacing: inherit;
+          text-align: center;
+          padding: 0; } }
     section:nth-of-type(1) .btn-primary {
       background: #ffd100;
       border-color: #ffd100;
@@ -10659,7 +10670,13 @@ section[role="default"] .grid {
 section[role="group"] {
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr auto; }
+  @media (max-width: 425px) {
+    section[role="group"] #itemGroup .item {
+      min-width: 25%;
+      padding: 15px 0 5px 0; }
+      section[role="group"] #itemGroup .item h1, section[role="group"] #itemGroup .item h2, section[role="group"] #itemGroup .item h3, section[role="group"] #itemGroup .item h4, section[role="group"] #itemGroup .item h5 {
+        display: none; } }
   section[role="group"] .grid {
     margin: 0; }
     section[role="group"] .grid .item {
@@ -10668,7 +10685,8 @@ section[role="group"] {
       padding: 30px;
       cursor: pointer;
       -webkit-transition: all 0.3s;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      text-align: center; }
       section[role="group"] .grid .item:nth-of-type(1) {
         background: #ffd100; }
       section[role="group"] .grid .item:nth-of-type(2) {
@@ -10682,22 +10700,22 @@ section[role="group"] {
       section[role="group"] .grid .item.active:after {
         content: '';
         position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -30px;
+        top: 35%;
+        right: 0;
+        left: 100%;
+        margin-left: -60px;
+        border: 30px solid transparent;
+        border-right: 30px solid #333333;
         width: 0;
-        height: 0;
-        border-bottom: solid 30px #333333;
-        border-left: solid 30px transparent;
-        border-right: solid 30px transparent; }
+        height: 0; }
         @media (max-width: 1024px) {
           section[role="group"] .grid .item.active:after {
-            top: 35%;
-            right: 0;
-            left: 100%;
-            margin-left: -80px;
-            border: 30px solid transparent;
-            border-right: 30px solid #333333; } }
+            top: 66%;
+            left: 50%;
+            margin-left: -30px;
+            border-bottom: solid 30px #333333;
+            border-left: solid 30px transparent;
+            border-right: solid 30px transparent; } }
     section[role="group"] .grid + #groupDetails .grid {
       background: #333333;
       color: #ffffff;
@@ -10731,7 +10749,7 @@ section[role="group"] {
       display: block; }
   @media (max-width: 1024px) {
     section[role="group"] {
-      grid-template-columns: 1fr auto; } }
+      grid-template-columns: 1fr; } }
 
 section[role="sponsors"] {
   background: #2bbde0; }
@@ -10819,7 +10837,6 @@ section[role="page"] {
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
     .grid .item h1, .grid .item h2, .grid .item h3, .grid .item h4 {
-      text-align: center;
       width: 100%; }
     .grid .item form, .grid .item p, .grid .item a, .grid .item ul {
       width: 100%; }
@@ -10829,7 +10846,7 @@ section[role="page"] {
       margin: 0 0 10px; }
     @media (max-width: 768px) {
       .grid .item {
-        min-width: 100%; } }
+        min-width: 90%; } }
 
 /* Radio buttons */
 .radio {

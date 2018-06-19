@@ -22,7 +22,6 @@
 
     h1, h2, h3, h4 {
 
-        text-align: center;
         width: 100%;
 
     }
@@ -43,7 +42,7 @@
 
     @media (max-width: $tabletPortrait) {
 
-        min-width: 100%;
+        min-width: 90%;
 
     }
 
