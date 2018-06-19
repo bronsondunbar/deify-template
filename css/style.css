@@ -10659,7 +10659,7 @@ section[role="default"] .grid {
 section[role="group"] {
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr auto; }
+  grid-template-columns: 1fr; }
   section[role="group"] .grid {
     margin: 0; }
     section[role="group"] .grid .item {
@@ -10721,6 +10721,9 @@ section[role="group"] {
           background: none; }
     section[role="group"] .grid + #groupDetails .grid.active {
       display: block; }
+  @media (max-width: 1024px) {
+    section[role="group"] {
+      grid-template-columns: 1fr auto; } }
 
 section[role="sponsors"] {
   background: #2bbde0; }
