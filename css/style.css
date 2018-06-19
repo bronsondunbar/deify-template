@@ -10295,7 +10295,7 @@ a.text-dark:focus, a.text-dark:hover {
 h1, h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500; }
-  @media (max-width: 425px) {
+  @media (max-width: 736px) {
     h1, h2, h3, h4 {
       text-align: center; } }
 
@@ -10325,38 +10325,6 @@ body {
     background: #332a00;
     border-color: #332a00;
     color: #ffffff !important; }
-
-/* Dropdowns */
-.dropdown .dropdown-toggle {
-  background: none;
-  border: 1px solid #ffffff;
-  border-radius: 0;
-  margin: 0; }
-  .dropdown .dropdown-toggle:hover {
-    background: none;
-    color: #ffffff;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .dropdown .dropdown-toggle:focus {
-    background: none;
-    color: #ffffff;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-
-.dropdown-menu {
-  width: 100%;
-  border-radius: 0;
-  padding: 0;
-  text-align: center; }
-  .dropdown-menu li a {
-    padding: 5px 0; }
-    .dropdown-menu li a:hover, .dropdown-menu li a:focus {
-      background: #2bbde0;
-      color: #ffffff; }
-
-.open > .dropdown-toggle.btn-default {
-  color: #ffffff;
-  background: none; }
 
 /* Navbar */
 .navbar-toggler {
@@ -10508,67 +10476,6 @@ body {
   @media (max-width: 1024px) {
     .search {
       width: 20%; } }
-
-/* Modal */
-.modal-header {
-  text-align: center; }
-
-.modal-title {
-  color: #2bbde0; }
-
-.modal-body {
-  color: #333333; }
-
-/* Scroll helper */
-.scroll-helper,
-.scroll-helper:before {
-  position: absolute;
-  left: 50%; }
-
-.scroll-helper {
-  width: 25px;
-  height: 40px;
-  margin-left: -20px;
-  top: 97%;
-  margin-top: -35px;
-  -webkit-box-shadow: inset 0 0 0 1px #ffffff;
-          box-shadow: inset 0 0 0 1px #ffffff;
-  border-radius: 25px;
-  z-index: 9999; }
-  @media (max-width: 425px) {
-    .scroll-helper {
-      top: 94%; } }
-
-.scroll-helper:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: #ffffff;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll-animation;
-          animation-name: scroll-animation; }
-
-@-webkit-keyframes scroll-animation {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(16px);
-            transform: translateY(16px); } }
-
-@keyframes scroll-animation {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(16px);
-            transform: translateY(16px); } }
 
 /* Sections */
 section {
@@ -10738,14 +10645,27 @@ section[role="group"] {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          section[role="group"] .grid + #groupDetails .grid .item .grid .item .card {
-            background: #ffffff; }
-            section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h1, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h2, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h3, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h4, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card h5 {
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item:nth-of-type(1) {
+            padding: 30px 0 30px 30px; }
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item:nth-of-type(2) {
+            padding: 30px 0 30px 0; }
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item:nth-of-type(3) {
+            padding: 30px 30px 30px 0; }
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details {
+            background: #ffffff;
+            margin: 0 -1px;
+            padding: 30px; }
+            section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details h1, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details h2, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details h3, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details h4, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details h5 {
               color: #333333; }
-          section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h1, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h2, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h3, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h4, section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight h5 {
-            color: #333333 !important; }
-          section[role="group"] .grid + #groupDetails .grid .item .grid .item .card.highlight p {
-            color: #333333 !important; }
+          section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight {
+            background: #ffd100; }
+            section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight h1, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight h2, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight h3, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight h4, section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight h5 {
+              color: #333333 !important; }
+            section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight p {
+              color: #333333 !important; }
+            section[role="group"] .grid + #groupDetails .grid .item .grid .item .group-details.highlight .btn-primary {
+              background: #333333;
+              color: #ffffff !important; }
         section[role="group"] .grid + #groupDetails .grid .item:hover, section[role="group"] .grid + #groupDetails .grid .item:focus {
           background: none; }
     section[role="group"] .grid + #groupDetails .grid.active {
@@ -10790,27 +10710,39 @@ section[role="page"] {
       padding: 9% 0 0 0; }
     section[role="page"] + section .grid .item i {
       font-size: 4em; }
-    section[role="page"] + section .card {
-      background: #ededed; }
-      section[role="page"] + section .card .btn-primary {
-        background: #2bbde0;
-        border-color: #2bbde0;
-        color: #ffffff !important; }
-        section[role="page"] + section .card .btn-primary:hover, section[role="page"] + section .card .btn-primary:focus {
-          background: #082e37;
-          border-color: #082e37;
-          color: #ffffff !important; }
-    section[role="page"] + section .card.highlight {
-      background: #2bbde0;
-      border: 1px solid #2bbde0; }
-      section[role="page"] + section .card.highlight .btn-primary {
+    section[role="page"] + section .groups .item {
+      padding: 30px 0;
+      margin: 0; }
+      section[role="page"] + section .groups .item i {
+        font-size: 4em; }
+    section[role="page"] + section .group-details {
+      background: #ededed;
+      margin: 0 -1px;
+      padding: 30px;
+      text-align: center; }
+      section[role="page"] + section .group-details h1, section[role="page"] + section .group-details h2, section[role="page"] + section .group-details h3, section[role="page"] + section .group-details h4, section[role="page"] + section .group-details h5 {
+        color: #333333; }
+      section[role="page"] + section .group-details .btn-primary {
         background: #333333;
-        border-color: #333333;
+        border: 1px solid #333333;
         color: #ffffff !important; }
-        section[role="page"] + section .card.highlight .btn-primary:hover, section[role="page"] + section .card.highlight .btn-primary:focus {
-          background: black;
-          border-color: black;
-          color: #ffffff !important; }
+        section[role="page"] + section .group-details .btn-primary:hover, section[role="page"] + section .group-details .btn-primary:focus {
+          background: #ffffff;
+          border: 1px solid #ffffff;
+          color: #333333 !important; }
+    section[role="page"] + section .group-details.highlight {
+      background: #2bbde0; }
+      section[role="page"] + section .group-details.highlight h1, section[role="page"] + section .group-details.highlight h2, section[role="page"] + section .group-details.highlight h3, section[role="page"] + section .group-details.highlight h4, section[role="page"] + section .group-details.highlight h5 {
+        color: #ffffff !important; }
+      section[role="page"] + section .group-details.highlight p {
+        color: #ffffff !important; }
+      section[role="page"] + section .group-details.highlight .btn-primary {
+        background: #ffd100;
+        border: 1px solid #ffd100;
+        color: #333333 !important; }
+        section[role="page"] + section .group-details.highlight .btn-primary:hover, section[role="page"] + section .group-details.highlight .btn-primary:focus {
+          background: #ffffff;
+          border: 1px solid #ffffff; }
 
 /* Grid */
 .grid {
@@ -10863,59 +10795,6 @@ section[role="page"] {
     padding: 0 15px 0 0; }
   .radio li:last-child {
     padding: 0; }
-
-/* Cards */
-.card {
-  text-align: center;
-  border: none;
-  border-radius: 0; }
-
-.card.highlight {
-  background: #333333;
-  padding: 30px 0;
-  margin: 0 -30px;
-  color: #ffffff; }
-  .card.highlight h1, .card.highlight h2, .card.highlight h3, .card.highlight h4, .card.highlight h5, .card.highlight p {
-    color: #ffffff !important; }
-
-/* Features */
-.layout {
-  padding: 30px 30px 30px 100px;
-  width: 70%;
-  margin: 0 0 0 15%; }
-  .layout .item {
-    position: relative; }
-    .layout .item h1, .layout .item h2, .layout .item h3, .layout .item h4 {
-      text-align: center; }
-    .layout .item i {
-      position: absolute;
-      font-size: 18em;
-      top: 30%;
-      left: -320px; }
-    .layout .item .grid .item i {
-      position: relative;
-      top: 0;
-      left: 0;
-      font-size: 8em; }
-
-.layout-flip {
-  padding: 30px 100px 30px 100px;
-  width: 70%;
-  margin: 0 0 0 15%; }
-  .layout-flip .item {
-    position: relative; }
-    .layout-flip .item h1, .layout-flip .item h2, .layout-flip .item h3, .layout-flip .item h4 {
-      text-align: center; }
-    .layout-flip .item i {
-      position: absolute;
-      font-size: 18em;
-      top: 30%;
-      right: -320px; }
-    .layout-flip .item .grid .item i {
-      position: relative;
-      top: 0;
-      left: 0;
-      font-size: 8em; }
 
 body {
   background: #ffffff;
