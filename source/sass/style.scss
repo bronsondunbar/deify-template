@@ -55,7 +55,7 @@ input {
 
 	background: none;
 	border: 1px solid $black;
-	padding: 5px;
+	padding: 10px;
 	margin: 5px 0;
 	width: 100%;
 	text-align: center;
@@ -73,7 +73,8 @@ textarea {
 
 	background: none;
 	border: 1px solid $black;
-	padding: 5px;
+	padding: 10px;
+	margin: 5px 0;
 	width: 100%;
 	min-height: 30vh;
 
@@ -225,7 +226,7 @@ footer {
 	position: static;
 	text-align: center;
 	color: $black;
-	padding: 15px 0 15px 0;
+	padding: 30px 0 30px 0;
 
 	.container {
 

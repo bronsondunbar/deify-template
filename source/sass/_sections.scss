@@ -6,212 +6,6 @@ section {
 	position: relative;
 	padding: 30px 0;
 
-	&:nth-of-type(1) {
-
-		background: $blue;
-
-		h1, h2, h3, h4, p {
-
-			color: $white;
-
-			span {
-
-				color: $black;
-
-			}
-
-		}
-
-		h1 {
-
-			word-spacing: 100vw;
-			text-align: left;
-			padding: 0 0 0 60px;
-
-			@media (max-width: $tabletLandscape) {
-
-				word-spacing: inherit;
-				text-align: center;
-				padding: 0;
-
-			}
-
-		}
-
-		.btn-primary {
-
-		  background: $yellow;
-		  border-color: $yellow;
-		  color: $black !important;
-
-		  &:hover, &:focus {
-
-		  	background: darken($yellow, 40%);
-		  	border-color: darken($yellow, 40%);
-		  	color: $white !important;
-
-		  }
-
-		}
-
-	}
-
-	&:nth-of-type(2) {
-
-		background: $yellow;
-
-		h1, h2, h3, h4, p {
-
-			color: $black !important;
-
-		}
-
-	}
-
-	&:nth-of-type(3) {
-
-		background: $pink;
-
-		h1, h2, h3, h4, p, i {
-
-			color: $white !important;
-
-		}
-
-		.lead {
-
-			border-color: $white;
-
-		}
-
-		.btn-primary {
-
-		  background: $pink;
-		  border-color: $pink;
-		  color: $white !important;
-
-		  &:hover, &:focus {
-
-		  	background: darken($pink, 40%);
-		  	border-color: darken($pink, 40%);
-		  	color: $white !important;
-
-		  }
-
-		}
-
-		.card {
-
-			text-align: center;
-			border: none;
-			border-radius: 0;
-			color: $black !important;
-
-			p {
-
-				color: $black !important;
-
-			}
-
-		}
-
-		.card.highlight {
-
-			background: $black;
-			padding: 30px 0;
-			margin: 0 -30px;
-			color: $white;
-
-			p {
-
-				color: $white !important;
-
-			}
-
-		}
-
-	}
-
-	&:nth-of-type(4) {
-
-		background: $white;
-
-		h1, h2, h3, h4, p {
-
-			color: $black !important;
-
-		}
-
-		.btn-primary {
-
-		  background: $black;
-		  border-color: $black;
-		  color: $white !important;
-
-		  &:hover, &:focus {
-
-		  	background: darken($black, 40%);
-		  	border-color: darken($black, 40%);
-		  	color: $white !important;
-
-		  }
-
-		}
-
-		.card.highlight {
-
-			.btn-primary {
-
-				background: $white;
-		  		border-color: $white;
-		  		color: $black !important;
-
-		  		&:hover, &:focus {
-
-			  		background: darken($white, 40%);
-			  		border-color: darken($white, 40%);
-			  		color: $black !important;
-
-			  	}
-
-			}
-
-		}
-
-	}
-
-	&:nth-of-type(5) {
-
-		background: $black;
-
-		h1, h2, h3, h4, p, i {
-
-			color: $white !important;
-
-		}
-
-		ul {
-
-			list-style-type: none;
-			text-align: center;
-
-			li {
-
-				display: inline-block;
-				margin: 0 15px 0 0;
-
-				&:last-child {
-
-					margin: 0;
-
-				}
-
-			}
-
-		}
-
-	}
-
 	svg {
 
 		width: 80%;
@@ -221,6 +15,53 @@ section {
 }
 
 section[role="default"] {
+
+	background: $blue;
+
+	h1, h2, h3, h4, p {
+
+		color: $white;
+
+		span {
+
+			color: $black;
+
+		}
+
+	}
+
+	h1 {
+
+		word-spacing: 100vw;
+		text-align: left;
+		font-size: 5em;
+		padding: 0 0 0 60px;
+
+		@media (max-width: $tabletLandscape) {
+
+			word-spacing: inherit;
+			text-align: center;
+			padding: 0;
+
+		}
+
+	}
+
+	.btn-primary {
+
+	  background: $yellow;
+	  border-color: $yellow;
+	  color: $black !important;
+
+	  &:hover, &:focus {
+
+	  	background: darken($yellow, 40%);
+	  	border-color: darken($yellow, 40%);
+	  	color: $white !important;
+
+	  }
+
+	}
 
 	.grid {
 
@@ -270,27 +111,15 @@ section[role="groups"] {
 			transition: $fastTransition;
 			text-align: center;
 
-			&:nth-of-type(1) {
-
-				background: $yellow;
-
-			}
-
-			&:nth-of-type(2) {
-
-				background: $pink;
-
-			}
-
-			&:nth-of-type(3) {
-
-				background: $peach;
-
-			}
-
-			&:hover, &:focus {
+			&:nth-of-type(odd) {
 
 				background: $white;
+
+			}
+
+			&:nth-of-type(even) {
+
+				background: $blue;
 
 			}
 
@@ -298,7 +127,7 @@ section[role="groups"] {
 
 		.item.active {
 
-			background: $white;
+			background: $yellow;
 
 			&:after {
 
@@ -370,9 +199,7 @@ section[role="groups"] {
 
 					}
 
-					.grid {
-
-						display: flex;
+					.groups {
 
 						.item {
 
@@ -380,11 +207,23 @@ section[role="groups"] {
 
 								padding: 30px 0 30px 30px;
 
+								@media (max-width: $mobileLargePortrait) {
+
+									padding: 15px;
+
+								}
+
 							}
 
 							&:nth-of-type(2) {
 
 								padding: 30px 0 30px 0;
+
+								@media (max-width: $mobileLargePortrait) {
+
+									padding: 15px;
+
+								}
 
 							}
 
@@ -392,7 +231,23 @@ section[role="groups"] {
 
 								padding: 30px 30px 30px 0;
 
+								@media (max-width: $mobileLargePortrait) {
+
+									padding: 15px;
+
+								}
+
 							}
+
+						}
+
+					}
+
+					.grid {
+
+						display: flex;
+
+						.item {
 
 							.group-details {
 
@@ -400,7 +255,7 @@ section[role="groups"] {
 								margin: 0 -1px;
 								padding: 30px;
 
-								h1, h2, h3, h4, h5 {
+								h1, h2, h3, h4, h5, p {
 
 									color: $black;
 
@@ -412,13 +267,7 @@ section[role="groups"] {
 
 								background: $yellow;
 
-								h1, h2, h3, h4, h5 {
-
-									color: $black !important;
-
-								}
-
-								p {
+								h1, h2, h3, h4, h5, p {
 
 									color: $black !important;
 
@@ -497,8 +346,42 @@ section[role="sponsors"] {
 
 }
 
+section[role="contact"] {
+
+	background: $black;
+
+	h1, h2, h3, h4, p, i, label {
+
+		color: $white !important;
+
+	}
+
+	input, textarea {
+
+		border: 1px solid $white;
+		color: $white;
+		transition: $fastTransition;
+
+		&:focus {
+
+			border: 1px solid $yellow;
+
+		}
+
+		&::placeholder {
+
+			color: $white;
+			opacity: 1;
+
+		}
+
+	}
+
+}
+
 section[role="page"] {
 
+	background: $blue;
 	height: 40vh;
 	padding: 5%;
 	overflow: hidden;
