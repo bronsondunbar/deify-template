@@ -225,6 +225,8 @@ section[role="default"] {
 section[role="group"] {
 
 	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr auto;
 
 	.grid {
 
@@ -234,7 +236,7 @@ section[role="group"] {
 
 			position: relative;
 			margin: 0;
-			padding: 60px 30px;
+			padding: 30px;
 			cursor: pointer;
 			transition: $fastTransition;
 
@@ -293,6 +295,7 @@ section[role="group"] {
 				color: $white;
 				display: none;
 				transition: $fastTransition;
+				height: 100%;
 
 				.item {
 

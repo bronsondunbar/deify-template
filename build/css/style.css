@@ -10657,13 +10657,15 @@ section[role="default"] .grid {
   min-height: 100vh; }
 
 section[role="group"] {
-  padding: 0; }
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr auto; }
   section[role="group"] .grid {
     margin: 0; }
     section[role="group"] .grid .item {
       position: relative;
       margin: 0;
-      padding: 60px 30px;
+      padding: 30px;
       cursor: pointer;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
@@ -10693,7 +10695,8 @@ section[role="group"] {
       color: #ffffff;
       display: none;
       -webkit-transition: all 0.3s;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      height: 100%; }
       section[role="group"] .grid + #groupDetails .grid .item {
         background: none;
         color: #ffffff;
@@ -10800,8 +10803,6 @@ section[role="page"] {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    min-height: 150px;
-    min-width: 15%;
     margin: 15px;
     padding: 15px;
     -webkit-transition: all 0.3s;
