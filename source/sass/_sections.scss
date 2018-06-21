@@ -105,21 +105,17 @@ section[role="groups"] {
 		.item {
 
 			position: relative;
+			background: $white;
 			margin: 0;
+			border-bottom: 1px solid $blue;
 			padding: 30px;
 			cursor: pointer;
 			transition: $fastTransition;
 			text-align: center;
 
-			&:nth-of-type(odd) {
+			&:hover, &:focus {
 
-				background: $white;
-
-			}
-
-			&:nth-of-type(even) {
-
-				background: $blue;
+				background: $yellow;
 
 			}
 
@@ -128,6 +124,7 @@ section[role="groups"] {
 		.item.active {
 
 			background: $yellow;
+			border: none;
 
 			&:after {
 
@@ -178,6 +175,7 @@ section[role="groups"] {
 					background: none;
 					color: $white;
 					cursor: default;
+					border: none;
 
 					h1, h2, h3, h4 {
 
@@ -403,17 +401,18 @@ section[role="page"] {
 
 		}
 
-		.icon {
+		.feature {
 
-			background: $white;
-			padding: 30px;
-			position: absolute;
-			top: -80px;
-			left: 43%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: -100px 0 0 0;
 
-			i {
+			img, i {
 
 				font-size: 10em;
+				background: $white;
+				padding: 30px;
 
 			}
 
@@ -421,7 +420,7 @@ section[role="page"] {
 
 		.container {
 
-			padding: 9% 0 0 0;
+			padding: 30px 15px;
 
 		}
 
