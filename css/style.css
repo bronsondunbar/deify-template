@@ -10411,7 +10411,7 @@ body {
   background-color: #ffd100 !important;
   padding: 15px 0;
   position: fixed;
-  top: -132px;
+  top: -160px;
   right: 0;
   left: 0;
   z-index: 1030;
@@ -10683,7 +10683,8 @@ section[role="page"] {
       section[role="page"] + section .feature img, section[role="page"] + section .feature i {
         font-size: 10em;
         background: #ffffff;
-        padding: 30px; }
+        padding: 30px;
+        width: 250px; }
     section[role="page"] + section .container {
       padding: 30px 15px; }
     section[role="page"] + section .grid .item i {
