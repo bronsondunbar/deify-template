@@ -156,7 +156,7 @@
 
 .nav-content {
 
-  background-color: rgba($pink, 1) !important;
+  background-color: rgba($yellow, 1) !important;
   padding: 15px 0;
   position: fixed;
   top: -132px;
@@ -168,7 +168,7 @@
   h1, h2, h3, h4, p {
 
     text-align: center;
-    color: $white;
+    color: $black;
 
   }
 
@@ -179,7 +179,7 @@
       .col {
 
         text-align: center;
-        color: $white;
+        color: $black;
 
         i {
 
@@ -205,7 +205,7 @@
 
 .nav-content.open {
 
-  top: 65px;
+  top: 62px;
 
 }
 

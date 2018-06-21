@@ -10408,7 +10408,7 @@ body {
     color: #2bbde0; }
 
 .nav-content {
-  background-color: #e22d5d !important;
+  background-color: #ffd100 !important;
   padding: 15px 0;
   position: fixed;
   top: -132px;
@@ -10419,10 +10419,10 @@ body {
   transition: all 0.5s; }
   .nav-content h1, .nav-content h2, .nav-content h3, .nav-content h4, .nav-content p {
     text-align: center;
-    color: #ffffff; }
+    color: #333333; }
   .nav-content .container .row .col {
     text-align: center;
-    color: #ffffff; }
+    color: #333333; }
     .nav-content .container .row .col i {
       display: block;
       text-align: center;
@@ -10432,7 +10432,7 @@ body {
       top: -280px; } }
 
 .nav-content.open {
-  top: 65px; }
+  top: 62px; }
 
 .navbar-title {
   text-transform: capitalize;
@@ -10530,17 +10530,18 @@ section[role="groups"] {
       position: relative;
       background: #ffffff;
       margin: 0;
-      border-bottom: 1px solid #2bbde0;
+      border-bottom: 1px solid #333333;
       padding: 30px;
       cursor: pointer;
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
       text-align: center; }
+      section[role="groups"] .grid .item:last-child {
+        border: none; }
       section[role="groups"] .grid .item:hover, section[role="groups"] .grid .item:focus {
         background: #ffd100; }
     section[role="groups"] .grid .item.active {
-      background: #ffd100;
-      border: none; }
+      background: #ffd100; }
       section[role="groups"] .grid .item.active:after {
         content: '';
         position: absolute;

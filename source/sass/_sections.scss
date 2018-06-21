@@ -107,11 +107,17 @@ section[role="groups"] {
 			position: relative;
 			background: $white;
 			margin: 0;
-			border-bottom: 1px solid $blue;
+			border-bottom: 1px solid $black;
 			padding: 30px;
 			cursor: pointer;
 			transition: $fastTransition;
 			text-align: center;
+
+			&:last-child {
+
+				border: none;
+
+			}
 
 			&:hover, &:focus {
 
@@ -124,7 +130,6 @@ section[role="groups"] {
 		.item.active {
 
 			background: $yellow;
-			border: none;
 
 			&:after {
 
