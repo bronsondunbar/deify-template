@@ -10384,12 +10384,6 @@ body {
 
 .navbar {
   background: #333333; }
-  .navbar i {
-    color: #ffffff;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-    .navbar i:hover, .navbar i:focus {
-      color: #2bbde0; }
   .navbar div ul {
     list-style-type: none;
     display: inline-block;
@@ -10405,6 +10399,13 @@ body {
     margin: 5px 0 0 15px; }
   .navbar .btn {
     margin: 0; }
+
+.navbar-brand a {
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    color: #2bbde0; }
 
 .nav-content {
   background-color: #e22d5d !important;
