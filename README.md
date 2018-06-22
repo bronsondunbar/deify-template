@@ -6,11 +6,13 @@ Template can be setup using CodeKit
 
 https://codekitapp.com/
 
+Preview https://bronsondunbar.github.io/deify-template/
+
 ## License
 
 MIT License
 
-Copyright (c) 2017 Bronson Dunbar www.bronsondunbar.com
+Copyright (c) 2018 Bronson Dunbar www.bronsondunbar.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,3 +31,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+<img src="https://github.com/bronsondunbar/deify-template/blob/master/screenshot.png" />
+
+<img src="https://github.com/bronsondunbar/deify-template/blob/master/screenshot-2.png" />
