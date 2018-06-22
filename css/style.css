@@ -10397,6 +10397,9 @@ body {
   .navbar .navbar-toggler {
     display: block;
     margin: 5px 0 0 15px; }
+  @media (max-width: 425px) {
+    .navbar .float-right ul:first-child {
+      display: none; } }
   .navbar .btn {
     margin: 0; }
 
@@ -10411,7 +10414,7 @@ body {
   background-color: #ffd100 !important;
   padding: 15px 0;
   position: fixed;
-  top: -160px;
+  top: -195px;
   right: 0;
   left: 0;
   z-index: 1030;
@@ -10420,16 +10423,16 @@ body {
   .nav-content h1, .nav-content h2, .nav-content h3, .nav-content h4, .nav-content p {
     text-align: center;
     color: #333333; }
-  .nav-content .container .row .col {
-    text-align: center;
-    color: #333333; }
-    .nav-content .container .row .col i {
-      display: block;
-      text-align: center;
-      padding: 15px; }
+  .nav-content .grid .item {
+    padding: 5px;
+    margin: 0;
+    min-width: 15%; }
+    @media (max-width: 425px) {
+      .nav-content .grid .item h2 {
+        display: none; } }
   @media (max-width: 425px) {
     .nav-content {
-      top: -280px; } }
+      top: -155px; } }
 
 .nav-content.open {
   top: 62px; }
@@ -10521,7 +10524,7 @@ section[role="groups"] {
   @media (max-width: 425px) {
     section[role="groups"] #itemGroup .item {
       min-width: 25%;
-      padding: 15px 0 5px 0; }
+      padding: 15px; }
       section[role="groups"] #itemGroup .item h1, section[role="groups"] #itemGroup .item h2, section[role="groups"] #itemGroup .item h3, section[role="groups"] #itemGroup .item h4, section[role="groups"] #itemGroup .item h5 {
         display: none; } }
   section[role="groups"] .grid {
@@ -10540,6 +10543,9 @@ section[role="groups"] {
         border: none; }
       section[role="groups"] .grid .item:hover, section[role="groups"] .grid .item:focus {
         background: #ffd100; }
+      @media (max-width: 425px) {
+        section[role="groups"] .grid .item {
+          border: none; } }
     section[role="groups"] .grid .item.active {
       background: #ffd100; }
       section[role="groups"] .grid .item.active:after {
@@ -10626,12 +10632,18 @@ section[role="sponsors"] {
     color: #ffffff !important; }
   section[role="sponsors"] ul {
     list-style-type: none;
-    text-align: center; }
+    text-align: center;
+    padding: 0;
+    margin: 0; }
     section[role="sponsors"] ul li {
       display: inline-block;
       margin: 0 15px 0 0; }
       section[role="sponsors"] ul li:last-child {
         margin: 0; }
+      @media (max-width: 425px) {
+        section[role="sponsors"] ul li {
+          display: block;
+          margin: 15px 0; } }
 
 section[role="contact"] {
   background: #333333; }
